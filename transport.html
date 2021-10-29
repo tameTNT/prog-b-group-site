@@ -22,47 +22,97 @@
     Some applications of CS in our modern world which you may or may not be aware of:
 </p>
 
-<!-- TODO: https://getbootstrap.com/docs/5.1/components/carousel/ instead of headings-->
-<h3>Traffic Management:</h3>
-<p>
-    Increasingly global cities rely on massive networks pulling from hundreds of sensors across the
-    city
-    to automatically manage their traffic flow and adjust to live conditions.
-</p>
-<p>
-    This is an <a
-        href="https://www.sciencedirect.com/topics/computer-science/traffic-management-system">active
-    area of research</a>
-    with constant development and innovation; especially as optimising our city's traffic flows,
-    integrating self-driving vehicles and minimising congestion becomes integral to meeting climate
-    targets.
-</p>
-
-<h3>Weather Forecasting:</h3>
-<p>
-    Weather forecasting plays a critical part in enabling things like global aviation and shipping
-    to run safely and efficiently.
-    Organisations will often have their own entire divisions dedicated to meteorological
-    predictions.
-</p>
-
-<h3>Self Driving:</h3>
 <div class="container">
     <div class="row">
         <div class="col">
-            <figure class="figure">
-                <img src="tesla_model_s.jpg" class="figure-img img-fluid rounded"
-                     alt="2018 Tesla Model S 75D Taken in A464, Priorslee Road, Shifnal">
-                <figcaption class="figure-caption text-end">By <a
-                        href="https://commons.wikimedia.org/wiki/User:Vauxford"
-                        title="User:Vauxford">Vauxford</a> - <span class="int-own-work" lang="en">Own work</span>,
-                    <a href="https://creativecommons.org/licenses/by-sa/4.0"
-                       title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a
-                            href="https://commons.wikimedia.org/w/index.php?curid=76762503">Link</a>
-                </figcaption>
-            </figure>
+            <div id="imageCarouselCaptions" class="carousel slide rounded" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#imageCarouselCaptions"
+                            data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#imageCarouselCaptions"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#imageCarouselCaptions"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="static/imgs/transport/traffic_management_center_bangalore.jpg"
+                             class="d-block w-100"
+                             alt="An inside view of a traffic management center with computer monitors displaying video camera feeds of traffic">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Traffic Management Systems</h5>
+                            <p>Inside view of the traffic management center at Ashok Nagar Police Center, Bangalore</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="static/imgs/transport/tpw_east_coast_low.gif" class="d-block w-100"
+                             alt="A gif of a satellite image showing changing moisture content of the atmosphere over the South Pacific">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Weather Forecasting</h5>
+                            <p>Satellite total precipitable Water showing atmospheric moisture
+                                during storm over the South Pacific</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="static/imgs/transport/tesla_model_s.jpg" class="d-block w-100"
+                             alt="2018 Tesla Model S 75D Taken in A464, Priorslee Road, Shifnal">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Self Driving</h5>
+                            <p>
+                                2018 Tesla Model S 75D Taken in A464, Priorslee Road, Shifnal
+                            </p>
+                            <p>
+                                By <a href="https://commons.wikimedia.org/wiki/User:Vauxford"
+                                     title="User:Vauxford">Vauxford</a> - Own work,
+                                <a href="https://creativecommons.org/licenses/by-sa/4.0"
+                                   title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>,
+                                <a href="https://commons.wikimedia.org/w/index.php?curid=76762503">Link</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#imageCarouselCaptions"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#imageCarouselCaptions"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col">
+            <h3>Traffic Management:</h3>
+            <p>
+                Increasingly global cities rely on massive networks pulling from hundreds of sensors across the
+                city
+                to automatically manage their traffic flow and adjust to live conditions.
+            </p>
+            <p>
+                This is an <a
+                    href="https://www.sciencedirect.com/topics/computer-science/traffic-management-system">active
+                area of research</a>
+                with constant development and innovation; especially as optimising our city's traffic flows,
+                integrating self-driving vehicles and minimising congestion becomes integral to meeting climate
+                targets.
+            </p>
+
+            <h3>Weather Forecasting:</h3>
+            <p>
+                Weather forecasting plays a critical part in enabling things like global aviation and shipping
+                to run safely and efficiently.
+                Organisations will often have their own entire divisions dedicated to meteorological
+                predictions.
+            </p>
+
+            <h3>Self Driving:</h3>
             <p>
                 Self driving cars are slowly growing in popularity as they become more accessible
                 and affordable.
@@ -74,5 +124,8 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
