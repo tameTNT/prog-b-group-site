@@ -75,13 +75,14 @@
                 var audio = document.getElementById("audio");
                 audio.play();
                 document.getElementById('explode').style.display='block';
+                document.getElementById('dontButton').style.display='none';
             }
             audio.addEventListener("ended", function() {
                 alert("The audio has ended");
             });
         </script>
       
-        <input type="button" value="DO NOT PRESS" onclick="play()">
+        <input id="dontButton" type="button" value="DO NOT PRESS" onclick="play()">
         <img id="explode" src="explosion.gif" alt="Funny little explosion gif" style="display:none">
         <audio id="audio" src="Sound_Ideas,_EXPLOSION_-_LARGE_EXPLOSION_03_(H-B).oga"></audio>
 
