@@ -1,0 +1,31 @@
+Interest of content
+7 - Excellent
+good images, had a slideshow, author sections look proffessional, many hyperlinks, medical page feels incomplete
+(missing the links to github and linked-in)
+
+Consistency and quality of visual presentation
+9 - Exemplary
+All pages with similar formats, colour schemes and themes. Has a nice menu bar. 
+Good visual presentation using bootstrap.
+
+Quality of written presentation
+7 - Excellent
+	Most pages have a lot of information, but medicine is lacking
+
+Validity of HTML
+10 - Perfect
+	we used an online html validator, and all pages were valid
+
+Evidence of collaboration including
+
+Author info not written by author
+10 - Perfect
+	YES
+	
+Balanced contributions from members
+6 - Very good
+	slightly unbalanced
+
+Not completed at the last minute
+7 - Excellent
+Most commits were done on tuesday
